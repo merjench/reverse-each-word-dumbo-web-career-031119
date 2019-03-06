@@ -1,7 +1,5 @@
-def reserse_each_word(sentense)
-  sentense = "Hello there, and how are you?"
-  sentense.each do |sentense|
-    sentense.reverse
-  end 
-end 
-   
+def reverse_each_word(sentence)
+  sentence.split.collect do |word| 
+    word.reverse.join(" ")
+ end
+end    
